@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="about">
+        <div class="about-left-col">
+        <img src="images/usage.jpg">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>overview</h1>
+                <span class="square"></span>
+                <p>Websites can be used in various fashions: a personal website, a corporate website for a company, a government website, an organization website, etc. Websites can be the work of an individual, a business or other organization, and are typically dedicated to a particular topic or purpose. Any website can contain a hyperlink to any other website, so the distinction between individual sites, as perceived by the user, can be blurred.
+
+                    Some websites require user registration or subscription to access content. Examples of subscription websites include many business sites, news websites, academic journal websites, gaming websites, file-sharing websites, message boards, web-based email, social networking websites, websites providing real-time stock market data, as well as sites providing various other services.
+                    
+                    While "web site" was the original spelling (sometimes capitalized "Web site", since "Web" is a proper noun when referring to the World Wide Web), this variant has become rarely used, and "website" has become the standard spelling. All major style guides, such as The Chicago Manual of Style[3] and the AP Stylebook,[4] have reflected this change.</p><br><br>
+                    <div class="line">
+                        <span class="line-a"></span><br>
+                        <span class="line-b"></span><br>
+                        <span class="line-c"></span>
+                   </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="overview.html">overview</a></li>
+            <li><a href="static website.html">static website</a></li>
+            <li><a href="interactive content.html">interactive website</a></li>
+            <li><a href="document.html">reference</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0px";
+        }
+        else{
+            sideNav.style.right = "-250px";
+        }
+        }   
+
+    </script>
+</body>
+</html>

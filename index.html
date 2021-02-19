@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+    <div class="container">
+        <img src="images/logo.jpg" class="logo">
+        <div class="header-text">
+            <h1>website</h1>
+            <span class="square"></span>
+            <p>welcome to this website!! </p>
+             <div class="line">
+                 <span class="line-a"></span><br>
+                 <span class="line-b"></span><br>
+                 <span class="line-c"></span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="Introduction.html">introduction</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="overview.html">overview</a></li>
+            <li><a href="static website.html">static website</a></li>
+            <li><a href="interactive content.html">interactive</a></li>
+            <li><a href="document.html">reference</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0px";
+        }
+        else{
+            sideNav.style.right = "-250px";
+        }
+        }   
+
+    </script>
+</body>
+</html>

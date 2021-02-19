@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>intro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="about">
+        <div class="about-left-col">
+        <img src="images/web (5).jpg">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Introduction</h1>
+                <span class="square"></span>
+                <p>A website (also written as web site) is a collection of web pages and related content that is identified by a common domain name and published on at least one web server. Notable examples are wikipedia.org, google.com, and amazon.com.
+
+                    All publicly accessible websites collectively constitute the World Wide Web. There are also private websites that can only be accessed on a private network, such as a company's internal website for its employees.
+                    
+                    Websites are typically dedicated to a particular topic or purpose, such as news, education, commerce, entertainment, or social networking. Hyperlinking between web pages guides the navigation of the site, which often starts with a home page.
+                    
+                    Users can access websites on a range of devices, including desktops, laptops, tablets, and smartphones. The software application used on these devices is called a web browser.</p><br><br>
+                    <div class="line">
+                        <span class="line-a"></span><br>
+                        <span class="line-b"></span><br>
+                        <span class="line-c"></span>
+                   </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="overview.html">overview</a></li>
+            <li><a href="static website.html">static website</a></li>
+            <li><a href="interactive content.html">interactive website</a></li>
+            <li><a href="document.html">reference</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0px";
+        }
+        else{
+            sideNav.style.right = "-250px";
+        }
+        }   
+
+    </script>
+</body>
+</html>

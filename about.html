@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="about">
+        <div class="about-left-col">
+        <img src="images/web (6).jpg">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>about website</h1>
+                <span class="square"></span>
+                <p>This article is about websites in general. For the Internet domain .website, see List of Internet top-level domains.
+                    Not to be confused with WebCite.</p><br><br>
+                    <div class="line">
+                        <span class="line-a"></span><br>
+                        <span class="line-b"></span><br>
+                        <span class="line-c"></span>
+                   </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="Introduction.html">Introduction</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="overview.html">overview</a></li>
+            <li><a href="static website.html">static website</a></li>
+            <li><a href="interactive content.html">interactive website</a></li>
+            <li><a href="document.html">reference</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick=function(){
+            if(sideNav.style.right == "-250px"){
+            sideNav.style.right="0px";
+        }
+        else{
+            sideNav.style.right = "-250px";
+        }
+        }   
+
+    </script>
+</body>
+</html>
